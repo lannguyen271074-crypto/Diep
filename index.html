@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Family Memories ❤️</title>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ==============================
+     LOADING SCREEN
+================================ -->
+
+<div id="loader">
+
+    <div class="loader-heart">
+        ❤️
+    </div>
+
+    <p>
+        Đang mở ký ức...
+    </p>
+
+</div>
+
+
+
+<!-- ==============================
+     MUSIC
+================================ -->
+
+<button id="musicBtn"
+        class="music-btn">
+
+    🎵
+
+</button>
+
+<audio id="bgMusic"
+       loop>
+
+    <source src="music.mp3"
+            type="audio/mpeg">
+
+</audio>
+
+
+
+<!-- ==============================
+     HERO
+================================ -->
+
+<section class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <div class="small-title">
+
+            OUR LITTLE WORLD
+
+        </div>
+
+
+        <h1>
+
+            Family
+            <br>
+
+            <span>
+                Memories
+            </span>
+
+        </h1>
+
+
+        <p>
+
+            Những khoảnh khắc nhỏ bé
+            tạo nên một gia đình lớn.
+
+        </p>
+
+
+        <button class="explore-btn"
+                onclick="scrollToMemories()">
+
+            Khám phá ký ức
+
+            <span>
+                ↓
+            </span>
+
+        </button>
+
+    </div>
+
+
+    <div class="scroll-text">
+
+        SCROLL TO EXPLORE
+
+    </div>
+
+</section>
+
+
+
+<!-- ==============================
+     INTRODUCTION
+================================ -->
+
+<section class="intro">
+
+    <div class="section-number">
+
+        01
+
+    </div>
+
+
+    <div class="intro-content">
+
+        <div class="section-label">
+
+            OUR STORY
+
+        </div>
+
+
+        <h2>
+
+            Có những khoảnh khắc
+            <br>
+
+            <i>
+                không nên bị lãng quên.
+            </i>
+
+        </h2>
+
+
+        <p>
+
+            Đây là nơi lưu giữ những bức ảnh,
+            những câu chuyện và những khoảnh khắc
+            bình dị nhất của gia đình.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==============================
+     MEMORIES
+================================ -->
+
+<section id="memories"
+         class="memories">
+
+
+    <div class="section-header">
+
+        <div class="section-label">
+
+            MEMORIES
+
+        </div>
+
+
+        <h2>
+
+            Những khoảnh khắc
+            <br>
+
+            <i>
+                của chúng ta
+            </i>
+
+        </h2>
+
+    </div>
+
+
+
+    <!-- PHOTO GRID -->
+
+    <div class="photo-grid">
+
+
+        <!-- PHOTO 1 -->
+
+        <div class="photo-card large"
+             onclick="openLightbox('images/family1.jpg')">
+
+            <img src="images/family1.jpg"
+                 alt="Kỷ niệm gia đình">
+
+
+            <div class="photo-info">
+
+                <span>
+                    01
+                </span>
+
+                <h3>
+                    Một ngày bên nhau
+                </h3>
+
+                <p>
+                    12.06.2025
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PHOTO 2 -->
+
+        <div class="photo-card"
+             onclick="openLightbox('images/family2.jpg')">
+
+            <img src="images/family2.jpg"
+                 alt="Gia đình">
+
+
+            <div class="photo-info">
+
+                <span>
+                    02
+                </span>
+
+                <h3>
+                    Những nụ cười
+                </h3>
+
+                <p>
+                    24.08.2025
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PHOTO 3 -->
+
+        <div class="photo-card"
+             onclick="openLightbox('images/family3.jpg')">
+
+            <img src="images/family3.jpg"
+                 alt="Chuyến đi">
+
+
+            <div class="photo-info">
+
+                <span>
+                    03
+                </span>
+
+                <h3>
+                    Chuyến đi của gia đình
+                </h3>
+
+                <p>
+                    02.10.2025
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PHOTO 4 -->
+
+        <div class="photo-card"
+             onclick="openLightbox('images/family4.jpg')">
+
+            <img src="images/family4.jpg"
+                 alt="Kỷ niệm">
+
+
+            <div class="photo-info">
+
+                <span>
+                    04
+                </span>
+
+                <h3>
+                    Những ngày bình yên
+                </h3>
+
+                <p>
+                    15.12.2025
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==============================
+     TIMELINE
+================================ -->
+
+<section class="timeline-section">
+
+
+    <div class="section-header">
+
+        <div class="section-label">
+
+            OUR JOURNEY
+
+        </div>
+
+
+        <h2>
+
+            Hành trình
+            <br>
+
+            <i>
+                của chúng ta
+            </i>
+
+        </h2>
+
+    </div>
+
+
+
+    <div class="timeline">
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-date">
+                2018
+            </div>
+
+            <div class="timeline-content">
+
+                <h3>
+                    Một gia đình nhỏ
+                </h3>
+
+                <p>
+
+                    Những ngày đầu tiên
+                    của một hành trình mới.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-date">
+                2020
+            </div>
+
+            <div class="timeline-content">
+
+                <h3>
+                    Những ngày bên nhau
+                </h3>
+
+                <p>
+
+                    Cùng nhau trải qua
+                    những ngày đặc biệt.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-date">
+                2023
+            </div>
+
+            <div class="timeline-content">
+
+                <h3>
+                    Những chuyến đi
+                </h3>
+
+                <p>
+
+                    Cùng nhau khám phá
+                    những nơi mới.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-date">
+                2026
+            </div>
+
+            <div class="timeline-content">
+
+                <h3>
+                    Câu chuyện vẫn tiếp tục...
+                </h3>
+
+                <p>
+                    ❤️
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==============================
+     MESSAGE
+================================ -->
+
+<section class="message">
+
+    <div class="message-inner">
+
+
+        <div class="section-label">
+
+            A LITTLE MESSAGE
+
+        </div>
+
+
+        <h2>
+
+            "Gia đình không phải
+            là một nơi để trở về,
+            <br>
+
+            <i>
+                mà là nơi luôn có người chờ ta.
+            </i>"
+
+        </h2>
+
+
+        <div class="heart">
+
+            ♥
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==============================
+     VIDEO
+================================ -->
+
+<section class="video-section">
+
+
+    <div class="section-header">
+
+        <div class="section-label">
+
+            MOVING MEMORIES
+
+        </div>
+
+
+        <h2>
+
+            Những ký ức
+            <br>
+
+            <i>
+                biết chuyển động
+            </i>
+
+        </h2>
+
+    </div>
+
+
+
+    <div class="video-container">
+
+        <video controls
+               poster="images/family1.jpg">
+
+            <source src="family-video.mp4"
+                    type="video/mp4">
+
+            Trình duyệt không hỗ trợ video.
+
+        </video>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==============================
+     FINAL
+================================ -->
+
+<section class="final">
+
+
+    <div class="final-content">
+
+        <span>
+
+            FOREVER TOGETHER
+
+        </span>
+
+
+        <h2>
+
+            Những ngày tháng
+            <br>
+
+            <i>
+                đẹp nhất
+            </i>
+
+            <br>
+
+            vẫn còn ở phía trước.
+
+        </h2>
+
+
+        <div class="final-heart">
+
+            ❤️
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==============================
+     LIGHTBOX
+================================ -->
+
+<div id="lightbox"
+     class="lightbox"
+     onclick="closeLightbox()">
+
+
+    <button class="close">
+
+        ×
+
+    </button>
+
+
+    <img id="lightboxImage"
+         src=""
+         alt="Ảnh kỷ niệm">
+
+</div>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
